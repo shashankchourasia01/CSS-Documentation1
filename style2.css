@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.red{
+     background: rgba(177, 58, 58, 0.307);
+     height: 100px;
+     color: white;
+}
+.green{
+    background-color: green;
+    color: aqua;
+}
+.yellow{
+    background-color: #f54272;
+    height: 50;
+    color: white;
+}

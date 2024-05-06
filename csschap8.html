@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSFORM TRANSITION AND ANIMATION</title>
+    <style>
+        .container{
+            background-color: red;
+            height: 440px;
+        }
+        .box{
+            border: 2px solid black;
+            display: inline-block;
+             /* transform: translate(100px , 50px); rotate: (45deg); */
+            /* transform-origin: 0; */
+            /* transform-origin: 0; */
+            /* transform: skew(10deg ); */
+        }
+        img{
+            width: 146px;
+            transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: steps(6, end);
+            /* WE CAN USE MULTIPLE TRANSITION I  SINGLE LINE */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img id="myimage" src="https://source.unsplash.com/user/erondu/960x520">
+            <button id="btn">Toggle</button>
+        </div>
+    </div>
+</body>
+<script>
+     myimage.style.width='146px';
+
+    btn.addEventListner("click",()=>{
+        if(   myimage.style.width==="546px"){
+      myimage.style.width="146px";
+        }
+        else if(   myimage.style.width==="146px"){
+      myimage.style.width="546px";
+        }
+    })
+</script>
+</html>
